@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Map {
     private final static int MAX_SIZE = 10;
 
-    private int[][] field;
+    private final int[][] field;
 
     public Map() {
         this.field = new int[MAX_SIZE][MAX_SIZE];
@@ -41,7 +41,7 @@ public class Map {
                 row = checkOutOfBounds();
                 System.out.println("Inserisci valore colonna da 1 a 10");
                 col = checkOutOfBounds();
-                field[row][col] = 1;
+                field[row-1][col] = 1;
             }
         }
     }

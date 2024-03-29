@@ -9,9 +9,9 @@ public class NavalBattle {
     public static void main(String[] args) {
      Map prova = new Map();
      Player p1 = new Player("pippo");
-     Ship s1 = new Ship(ShipDimension.SUBMARINE);
+     Ship s1 = new Ship(ShipDimension.AIRCRAFT_CARRIER);
      prova.printMap();
-     //prova.insertShip(p1,s1);
-     //prova.printMap();
+     prova.insertShip(p1,s1);
+     prova.printMap();
     }
 }
