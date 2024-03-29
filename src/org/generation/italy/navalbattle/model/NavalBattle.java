@@ -7,11 +7,11 @@ import org.generation.italy.navalbattle.model.map.ShipDimension;
 
 public class NavalBattle {
     public static void main(String[] args) {
-     Map prova = new Map();
-     Player p1 = new Player("pippo");
-     Ship s1 = new Ship(ShipDimension.AIRCRAFT_CARRIER);
-     prova.printMap();
-     prova.insertShip(p1,s1);
-     prova.printMap();
+        Map prova = new Map();
+        Player p1 = new Player("pippo");
+        Ship s1 = new Ship(ShipDimension.SUBMARINE);
+        prova.printMap();
+        prova.insertShip(p1,s1);
+        prova.printMap();
     }
 }
